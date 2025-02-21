@@ -1,0 +1,45 @@
+🔹 What is Stream API in Java?
+
+Stream API in Java (introduced in Java 8) is used to process collections of data in a functional-style. It helps in performing operations such as filtering, mapping, reducing, and sorting efficiently.
+
+✅ Key Features of Stream API:
+
+    Supports functional programming.
+    Uses lazy evaluation (operations are executed only when necessary).
+    Provides parallel processing for better performance.
+    Works with collections, arrays, and I/O resources.
+🔹 Types of Stream Operations
+
+    Intermediate Operations → Transform the stream and return another stream.
+        filter(), map(), sorted(), distinct(), limit(), etc.
+    Terminal Operations → Produce a result or a side effect.
+        collect(), count(), forEach(), reduce(), etc.
+
+💡 Streams are lazy! Intermediate operations don’t run until a terminal operation is called.    
+
+🔹 Parallel Streams - Performance Boost 🚀
+
+Streams can run in parallel for better performance.
+
+🔹 When to Use Stream API?
+
+✅ Best Suited For:
+✔ Large data processing (Lists, Sets, Maps).
+✔ Performance improvements (Parallel Streams).
+✔ Functional-style coding (Lambdas).
+
+❌ Not Ideal For:
+
+    Small data sets (normal loops are faster).
+    If modifying elements (streams are immutable).
+
+    🔹 Conclusion
+Feature	Description
+filter()	Filters elements based on a condition.
+map()	Transforms elements.
+sorted()	Sorts elements.
+distinct()	Removes duplicates.
+collect()	Converts Stream to List, Set, Map.
+count()	Counts elements.
+forEach()	Iterates elements.
+reduce()	Reduces elements to a single value.
